@@ -4696,3 +4696,40 @@ body.navPanel-visible #page-wrapper {
     display: none;
   }
 }
+
+/* About page: founder monogram (replace with a headshot when available) */
+.founder-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  background: #f4f0e9;
+}
+
+.founder-photo::after {
+  display: none;
+}
+
+.founder-monogram {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid #977f58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #152340;
+  letter-spacing: 0.05em;
+}
+
+/* Eight-item menu: tighter spacing so links clear the logo */
+#nav .nav-inner .nav-links {
+  gap: 0.35rem;
+}
+
+#nav .nav-inner .nav-links a {
+  padding: 0 0.7rem;
+}
