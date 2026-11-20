@@ -4666,3 +4666,33 @@ body.navPanel-visible #page-wrapper {
     letter-spacing: 0.08em;
   }
 }
+
+/* Mobile fixes: keep footer links and portfolio images inside the screen */
+@media screen and (max-width: 736px) {
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1.25rem;
+  }
+
+  .footer-links li {
+    margin: 0;
+    padding: 0;
+  }
+
+  #portfolio-intro .project-media img,
+  .project-media img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project-two-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-two-col::after {
+    display: none;
+  }
+}
